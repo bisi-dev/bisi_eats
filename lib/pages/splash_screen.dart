@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import '../core/app_core.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -8,6 +10,18 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
+  void loadData() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      Navigator.of(context).pushReplacementNamed('/Navigation');
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    Timer(const Duration(seconds: 1), () => loadData());
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

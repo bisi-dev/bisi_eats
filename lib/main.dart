@@ -1,5 +1,6 @@
 import 'core/app_core.dart';
 
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());

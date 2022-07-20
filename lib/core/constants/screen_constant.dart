@@ -1,5 +1,3 @@
-import '../app_core.dart';
-
 // App's name
 const String kAppName = 'Bisi Eats';
 
