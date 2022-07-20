@@ -11,6 +11,7 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+  provider: ^6.0.3
 
 dev_dependencies:
   flutter_test:
@@ -20,3 +21,27 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: assets/fonts/ProductSans-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/ProductSans-Thin.ttf
+          weight: 200
+        - asset: assets/fonts/ProductSans-Light.ttf
+          weight: 300
+        - asset: assets/fonts/ProductSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/ProductSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/ProductSans-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/ProductSans-Black.ttf
+          weight: 700
+        - asset: assets/fonts/ProductSans-Black.ttf
+          weight: 800
+        - asset: assets/fonts/ProductSans-Black.ttf
+          weight: 900
